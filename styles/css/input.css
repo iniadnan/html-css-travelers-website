@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    @font-face {
+        font-family: "SF Pro Display";
+        src: url("../../assets/FONTS/SFPRODISPLAYREGULAR.OTF");
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: "SF Pro Display";
+        src: url("../../assets/FONTS/SFPRODISPLAYMEDIUM.OTF");
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: "SF Pro Display";
+        src: url("../../assets/FONTS/SFPRODISPLAYSEMIBOLDITALIC.OTF");
+        font-weight: 600;
+        font-style: italic, oblique;
+    }
+
+    @font-face {
+        font-family: "SF Pro Display";
+        src: url("../../assets/FONTS/SFPRODISPLAYBOLD.OTF");
+        font-weight: bold;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        font-family: 'SF Pro Display', sans-serif;
+        font-size: 18px;
+    }
+
+    .container-travelers {
+        max-width: 1070px;
+        width: 100%;
+        margin: 0px auto;
+    }
+}
