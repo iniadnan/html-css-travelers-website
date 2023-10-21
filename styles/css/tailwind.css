@@ -484,17 +484,37 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-14 {
+  bottom: 3.5rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-\[18px\] {
@@ -503,6 +523,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-\[55px\] {
   margin-top: 55px;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .flex {
@@ -521,6 +549,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
+.w-\[449px\] {
+  width: 449px;
+}
+
+.w-\[460px\] {
+  width: 460px;
+}
+
 .w-\[276px\] {
   width: 276px;
 }
@@ -531,6 +571,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[50px\] {
   width: 50px;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .flex-wrap {
@@ -549,8 +593,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 
 .rounded-\[20px\] {
@@ -559,6 +613,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-\[10px\] {
   border-radius: 10px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-8 {
+  border-width: 8px;
 }
 
 .border-t {
@@ -583,16 +649,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-position: center;
 }
 
-.pb-\[55px\] {
-  padding-bottom: 55px;
-}
-
-.pt-\[25px\] {
-  padding-top: 25px;
-}
-
-.pb-\[35px\] {
-  padding-bottom: 35px;
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .pb-\[120px\] {
@@ -607,8 +666,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 50px;
 }
 
+.pb-\[55px\] {
+  padding-bottom: 55px;
+}
+
+.pt-\[25px\] {
+  padding-top: 25px;
+}
+
+.pb-\[35px\] {
+  padding-bottom: 35px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .text-2xl {
@@ -619,10 +694,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-\[40px\] {
-  font-size: 40px;
 }
 
 .font-medium {
