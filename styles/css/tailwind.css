@@ -577,6 +577,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100px;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
