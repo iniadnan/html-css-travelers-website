@@ -4,6 +4,13 @@
 
 @layer utilities {
     @font-face {
+        font-family: "Heavitas";
+        src: url("../../assets/FONTS/Heavitas.ttf");
+        font-weight: 400;
+    }
+
+
+    @font-face {
         font-family: "SF Pro Display";
         src: url("../../assets/FONTS/SFPRODISPLAYREGULAR.OTF");
         font-weight: 400;
@@ -43,5 +50,9 @@
         max-width: 1070px;
         width: 100%;
         margin: 0px auto;
+    }
+
+    .font-heavitas {
+        font-family: "Heavitas", Helvetica, sans-serif;
     }
 }
