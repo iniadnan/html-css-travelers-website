@@ -725,6 +725,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 104px;
 }
 
+.w-\[182px\] {
+  width: 182px;
+}
+
 .max-w-\[529px\] {
   max-width: 529px;
 }
