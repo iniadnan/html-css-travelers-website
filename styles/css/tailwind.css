@@ -673,6 +673,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 154px;
 }
 
+.h-\[43\.08px\] {
+  height: 43.08px;
+}
+
+.h-\[189px\] {
+  height: 189px;
+}
+
+.h-auto {
+  height: auto;
+}
+
 .max-h-\[900px\] {
   max-height: 900px;
 }
@@ -743,6 +755,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[154px\] {
   width: 154px;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .max-w-\[529px\] {
