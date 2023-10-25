@@ -7,6 +7,7 @@
         font-family: "Heavitas";
         src: url("../../assets/FONTS/Heavitas.ttf");
         font-weight: 400;
+        font-display: swap;
     }
 
 
@@ -14,12 +15,14 @@
         font-family: "SF Pro Display";
         src: url("../../assets/FONTS/SFPRODISPLAYREGULAR.OTF");
         font-weight: 400;
+        font-display: swap;
     }
 
     @font-face {
         font-family: "SF Pro Display";
         src: url("../../assets/FONTS/SFPRODISPLAYMEDIUM.OTF");
         font-weight: 500;
+        font-display: swap;
     }
 
     @font-face {
@@ -27,12 +30,14 @@
         src: url("../../assets/FONTS/SFPRODISPLAYSEMIBOLDITALIC.OTF");
         font-weight: 600;
         font-style: italic, oblique;
+        font-display: swap;
     }
 
     @font-face {
         font-family: "SF Pro Display";
         src: url("../../assets/FONTS/SFPRODISPLAYBOLD.OTF");
         font-weight: bold;
+        font-display: swap;
     }
 
     html {
