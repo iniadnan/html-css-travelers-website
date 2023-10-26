@@ -199,20 +199,20 @@
         </div>
     </section>
     <!-- POPULAR DESTINATIONS -->
-    <main style="display: none;">
-        <div class="container-travelers">
-            <section class="flex items-center justify-between mb-12">
-                <div>
-                    <h2 class="font-medium text-[40px] text-[#1E1E1E]">Popular destinations</h2>
+    <main>
+        <div class="container-travelers px-5 md:px-5 lg:px-0">
+            <section class="flex items-center justify-between mb-8 md:mb-10 lg:mb-12">
+                <div class="max-w-2/3">
+                    <h2 class="font-medium text-[32px] md:text-[32px] lg:text-[36px] xl:text-[40px] text-[#1E1E1E]">Popular destinations</h2>
                 </div>
                 <!-- BUTTON FOR TRIGGER SLIDE RIGHT - LEFT -->
-                <div class="flex items-center gap-x-5">
-                    <button type="button" class="h-10 w-10 rounded-full inline-flex items-center justify-center" aria-label="Button Swiper Left" style="background-color: rgba(229, 240, 245, 1);">
+                <div class="flex items-center gap-x-3 md:gap-x-5">
+                    <button type="button" class="h-8 w-8 md:h-10 md:w-10 rounded-full inline-flex items-center justify-center" aria-label="Button Swiper Left" style="background-color: rgba(229, 240, 245, 1);">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17 11H9.40999L12.71 7.71C12.8983 7.5217 13.0041 7.2663 13.0041 7C13.0041 6.7337 12.8983 6.47831 12.71 6.29C12.5217 6.1017 12.2663 5.99591 12 5.99591C11.7337 5.99591 11.4783 6.1017 11.29 6.29L6.28999 11.29C6.19895 11.3851 6.12758 11.4973 6.07999 11.62C5.97997 11.8635 5.97997 12.1365 6.07999 12.38C6.12758 12.5028 6.19895 12.6149 6.28999 12.71L11.29 17.71C11.383 17.8037 11.4936 17.8781 11.6154 17.9289C11.7373 17.9797 11.868 18.0058 12 18.0058C12.132 18.0058 12.2627 17.9797 12.3846 17.9289C12.5064 17.8781 12.617 17.8037 12.71 17.71C12.8037 17.617 12.8781 17.5064 12.9289 17.3846C12.9796 17.2627 13.0058 17.132 13.0058 17C13.0058 16.868 12.9796 16.7373 12.9289 16.6154C12.8781 16.4936 12.8037 16.383 12.71 16.29L9.40999 13H17C17.2652 13 17.5196 12.8946 17.7071 12.7071C17.8946 12.5196 18 12.2652 18 12C18 11.7348 17.8946 11.4804 17.7071 11.2929C17.5196 11.1054 17.2652 11 17 11Z" fill="#8A8A8A"/>
                         </svg>
                     </button>
-                    <button type="button" class="h-10 w-10 rounded-full inline-flex items-center justify-center" aria-label="Button Swiper Right" style="background: linear-gradient(180deg, #0077ED -112.22%, #7BF9D3 196.67%);">
+                    <button type="button" class="h-8 w-8 md:h-10 md:w-10 rounded-full inline-flex items-center justify-center" aria-label="Button Swiper Right" style="background: linear-gradient(180deg, #0077ED -112.22%, #7BF9D3 196.67%);">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.92 11.62C17.8724 11.4973 17.801 11.3851 17.71 11.29L12.71 6.29C12.6168 6.19676 12.5061 6.1228 12.3842 6.07234C12.2624 6.02188 12.1319 5.99591 12 5.99591C11.7337 5.99591 11.4783 6.1017 11.29 6.29C11.1968 6.38324 11.1228 6.49393 11.0723 6.61575C11.0219 6.73758 10.9959 6.86814 10.9959 7C10.9959 7.2663 11.1017 7.5217 11.29 7.71L14.59 11H7C6.73478 11 6.48043 11.1054 6.29289 11.2929C6.10536 11.4804 6 11.7348 6 12C6 12.2652 6.10536 12.5196 6.29289 12.7071C6.48043 12.8946 6.73478 13 7 13H14.59L11.29 16.29C11.1963 16.383 11.1219 16.4936 11.0711 16.6154C11.0203 16.7373 10.9942 16.868 10.9942 17C10.9942 17.132 11.0203 17.2627 11.0711 17.3846C11.1219 17.5064 11.1963 17.617 11.29 17.71C11.383 17.8037 11.4936 17.8781 11.6154 17.9289C11.7373 17.9797 11.868 18.0058 12 18.0058C12.132 18.0058 12.2627 17.9797 12.3846 17.9289C12.5064 17.8781 12.617 17.8037 12.71 17.71L17.71 12.71C17.801 12.6149 17.8724 12.5028 17.92 12.38C18.02 12.1365 18.02 11.8635 17.92 11.62Z" fill="#EDEDED"/>
                         </svg>
@@ -220,8 +220,8 @@
                 </div>
             </section>
             <!-- LIST OF DESTINATIONS -->
-            <div class="flex gap-x-[17.5px]">
-                <article class="w-1/3">
+            <div class="flex flex-wrap lg:flex-nowrap gap-x-[17.5px]">
+                <article class="w-full md:w-2/3 lg:w-1/3">
                     <!-- HEADER -->
                     <div class="relative mb-[26px]">
                         <img class="h-[475px] w-full object-cover rounded-[20px]" height="475" width="300" src="./assets/images/destinations-bali.webp"
@@ -261,7 +261,7 @@
                         <p class="font-bold text-2xl text-[#1E1E1E]">$380</p>
                     </div>
                 </article>
-                <article class="w-1/3">
+                <article class="hidden lg:block w-full md:w-2/3 lg:w-1/3">
                     <!-- HEADER -->
                     <div class="relative mb-[26px]">
                         <img class="h-[475px] w-full object-cover rounded-[20px]"
@@ -301,7 +301,7 @@
                         <p class="font-bold text-2xl text-[#1E1E1E]">$475</p>
                     </div>
                 </article>
-                <article class="w-1/3">
+                <article class="hidden lg:block w-full md:w-2/3 lg:w-1/3">
                     <!-- HEADER -->
                     <div class="relative mb-[26px]">
                         <img class="h-[475px] w-full object-cover rounded-[20px]"
