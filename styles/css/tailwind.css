@@ -625,6 +625,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
+.mb-\[14px\] {
+  margin-bottom: 14px;
+}
+
+.mt-\[40px\] {
+  margin-top: 40px;
+}
+
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -679,6 +691,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[50px\] {
   height: 50px;
+}
+
+.h-\[380px\] {
+  height: 380px;
 }
 
 .max-h-\[900px\] {
@@ -767,6 +783,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[460px\] {
   max-width: 460px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .-translate-y-1\/2 {
@@ -1083,6 +1103,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-\[32px\] {
+  font-size: 32px;
+}
+
+.text-\[35px\] {
+  font-size: 35px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1093,6 +1125,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-\[52px\] {
   line-height: 52px;
+}
+
+.leading-\[40px\] {
+  line-height: 40px;
 }
 
 .text-\[\#EDEDED\] {
@@ -1207,6 +1243,22 @@ body {
     margin-bottom: 1.25rem;
   }
 
+  .md\:mb-\[18px\] {
+    margin-bottom: 18px;
+  }
+
+  .md\:mt-\[48px\] {
+    margin-top: 48px;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-\[420px\] {
+    height: 420px;
+  }
+
   .md\:flex-wrap {
     flex-wrap: wrap;
   }
@@ -1238,9 +1290,33 @@ body {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-\[36px\] {
+    font-size: 36px;
+  }
+
+  .md\:text-\[37px\] {
+    font-size: 37px;
+  }
+
+  .md\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .md\:leading-\[48px\] {
+    line-height: 48px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-\[55px\] {
+    margin-top: 55px;
+  }
+
+  .lg\:h-\[450px\] {
+    height: 450px;
+  }
+
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
   }
@@ -1262,6 +1338,14 @@ body {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-\[40px\] {
+    font-size: 40px;
+  }
+
+  .lg\:leading-\[52px\] {
+    line-height: 52px;
   }
 }
 
