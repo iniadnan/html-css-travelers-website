@@ -633,6 +633,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 40px;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -765,6 +773,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50px;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-\[72px\] {
+  width: 72px;
+}
+
+.w-\[80px\] {
+  width: 80px;
+}
+
 .max-w-\[529px\] {
   max-width: 529px;
 }
@@ -787,6 +807,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[449px\] {
+  max-width: 449px;
 }
 
 .-translate-y-1\/2 {
@@ -893,6 +917,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-y-8 {
   row-gap: 2rem;
+}
+
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
 }
 
 .whitespace-nowrap {
@@ -1064,6 +1093,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
+.pb-\[100px\] {
+  padding-bottom: 100px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1113,6 +1146,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[16px\] {
   font-size: 16px;
+}
+
+.text-\[36px\] {
+  font-size: 36px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-medium {
@@ -1251,12 +1293,36 @@ body {
     margin-top: 48px;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .md\:hidden {
     display: none;
   }
 
   .md\:h-\[420px\] {
     height: 420px;
+  }
+
+  .md\:w-\[80px\] {
+    width: 80px;
+  }
+
+  .md\:w-\[90px\] {
+    width: 90px;
+  }
+
+  .md\:max-w-\[449px\] {
+    max-width: 449px;
+  }
+
+  .md\:max-w-\[460px\] {
+    max-width: 460px;
   }
 
   .md\:flex-wrap {
@@ -1266,6 +1332,16 @@ body {
   .md\:gap-x-20 {
     -moz-column-gap: 5rem;
          column-gap: 5rem;
+  }
+
+  .md\:gap-x-1 {
+    -moz-column-gap: 0.25rem;
+         column-gap: 0.25rem;
+  }
+
+  .md\:gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 
   .md\:px-5 {
@@ -1279,6 +1355,10 @@ body {
 
   .md\:pb-\[48px\] {
     padding-bottom: 48px;
+  }
+
+  .md\:pb-\[120px\] {
+    padding-bottom: 120px;
   }
 
   .md\:text-xl {
@@ -1303,6 +1383,10 @@ body {
     font-size: 18px;
   }
 
+  .md\:text-\[34px\] {
+    font-size: 34px;
+  }
+
   .md\:leading-\[48px\] {
     line-height: 48px;
   }
@@ -1313,8 +1397,20 @@ body {
     margin-top: 55px;
   }
 
+  .lg\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .lg\:h-\[450px\] {
     height: 450px;
+  }
+
+  .lg\:h-\[100px\] {
+    height: 100px;
+  }
+
+  .lg\:w-\[100px\] {
+    width: 100px;
   }
 
   .lg\:flex-nowrap {
@@ -1324,6 +1420,16 @@ body {
   .lg\:gap-x-14 {
     -moz-column-gap: 3.5rem;
          column-gap: 3.5rem;
+  }
+
+  .lg\:gap-x-2 {
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+
+  .lg\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 
   .lg\:px-0 {
