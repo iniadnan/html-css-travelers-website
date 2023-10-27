@@ -13,13 +13,22 @@
 
 <body>
     <!-- NAV -->
-    <nav class="w-full fixed z-50" style="display: none;">
-        <div class="container-travelers">
+    <nav class="w-full fixed z-50">
+        <div class="container-travelers px-5 md:px-5 lg:px-0">
             <div class="flex items-center gap-x-[80px] py-[14px]">
-                <div>
+                <!-- HAMBURGER BUTTON SHOW IN MOBILE -->
+                <div class="w-3/12 block md:hidden">
+                    <button type="button" class="text-[#1E1E1E]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>                          
+                    </button>
+                </div>
+                <!-- NAV LOGO -->
+                <div class="w-5/12 md:w-auto">
                     <a href="/" class="font-heavitas text-base text-[#EDEDED]">TRAVELERS</a>
                 </div>
-                <div class="flex gap-x-[35px]">
+                <div class="hidden md:flex md:w-auto md:gap-x-[22px] lg:gap-x-[28px] xl:gap-x-[35px]">
                     <a href="/" class="font-medium text-base text-[#EDEDED]">Home</a>
                     <a href="/" class="font-medium text-base text-[#EDEDED]">About Us</a>
                     <a href="/" class="font-medium text-base text-[#EDEDED]">Destinations</a>
@@ -27,17 +36,18 @@
                     <a href="/" class="font-medium text-base text-[#EDEDED]">Blog</a>
                     <a href="/" class="font-medium text-base text-[#EDEDED]">Services</a>
                 </div>
-                <div class="ml-auto">
+                <!-- BOOK A TRAVEL -->
+                <div class="w-3/12 md:w-auto ml-auto">
                     <!-- BUTTON BOOK TRAVEL -->
                     <a href="/"
-                        class="inline-block p-[13px] font-bold text-base text-[#EDEDED] rounded-[10px]" style="background: linear-gradient(180deg, #0077ED -112.22%, #7BF9D3 196.67%);">Book a travel</a>
+                        class="inline-block py-[8px] px-[10px] md:py-[10px] md:px-[12px] lg:py-[13px] lg:px-[13px] font-bold text-sm md:text-base text-[#EDEDED] rounded-[10px] whitespace-nowrap" style="background: linear-gradient(180deg, #0077ED -112.22%, #7BF9D3 196.67%);">Book a travel</a>
                 </div>
             </div>
         </div>
     </nav>
     <!-- HEADER -->
-    <header style="display: none;">
-        <div class="h-screen max-h-[900px] w-full flex flex-nowrap relative">
+    <header>
+        <div class="h-screen max-h-[900px] w-full flex flex-nowrap relative overflow-hidden">
             <!-- HEADER LEFT -->
             <div class="h-full w-1/12">
                 <img class="h-full w-full object-cover" height="800" width="200" src="./assets/images/header-left.webp" alt="Ornament">
@@ -47,7 +57,7 @@
                 <!-- TEXT & 1M IMAGE -->
                 <div class="absolute top-1/2 transform -translate-y-1/2 left-0 z-10">
                     <!-- TEXT -->
-                    <svg width="157" height="437" viewBox="0 0 157 437" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="w-[120px] md:w-[140px] lg:w-[157px]" width="157" height="437" viewBox="0 0 157 437" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.53325 39.1116L11.0445 40.4418C10.6213 41.5328 11.3348 42.7727 12.7156 43.5041C14.1049 44.2401 15.4062 44.0785 15.8907 43.1637C16.3204 42.3525 15.9627 41.5884 14.6394 40.4564L13.2045 39.2432C11.1696 37.5353 10.6562 35.7715 11.6208 33.9506C12.8367 31.6552 15.6261 31.1877 18.4048 32.6597C21.3044 34.1957 22.3344 36.6531 21.1844 38.9283L18.7423 37.6346C19.2137 36.5361 18.6286 35.4084 17.3255 34.7181C16.0397 34.037 14.8521 34.1926 14.363 35.1159C13.9562 35.884 14.3317 36.6355 15.5905 37.7222L16.9315 38.8415C19.1421 40.6976 19.6626 42.3437 18.6569 44.2422C17.3769 46.6585 14.6089 47.1483 11.5195 45.5117C8.52498 43.9255 7.37209 41.4914 8.53325 39.1116Z" fill="white"/>
                         <path d="M37.5971 58.4396L36.183 60.4298L28.5725 55.0225L36.7343 43.535L44.3449 48.9423L42.9365 50.9246L37.7301 47.2254L35.7618 49.9958L40.6736 53.4857L39.3614 55.3326L34.4495 51.8427L32.3907 54.7405L37.5971 58.4396Z" fill="white"/>
                         <path d="M57.4059 62.3533L54.3493 65.6453L56.21 67.3729C57.2978 68.3829 58.5128 68.3517 59.463 67.3283C60.3932 66.3264 60.3186 65.0577 59.2451 64.061L57.4059 62.3533ZM52.8941 67.2126L49.3857 70.9912L47.2244 68.9845L56.8128 58.6577L61.0423 62.5847C63.4182 64.7908 63.6151 67.3057 61.7214 69.3453C60.4921 70.6692 58.7419 71.1763 57.122 70.5385L55.4902 76.6591L53.0426 74.3866L54.626 68.8206L52.8941 67.2126Z" fill="white"/>
@@ -66,7 +76,7 @@
                         <path d="M2.64978 378.9L1.63905 376.678L10.1374 372.813L15.9713 385.64L7.47299 389.505L6.4663 387.292L12.28 384.648L10.8731 381.554L5.38827 384.048L4.45031 381.986L9.9351 379.492L8.46347 376.256L2.64978 378.9Z" fill="white"/>
                     </svg>
                     <!-- 1M IMAGE -->
-                    <svg class="w-[175px] absolute top-1/2 transform -translate-y-1/2 -left-[87.5px] z-10" width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="w-[140px] md:w-[150px] lg:w-[175px] absolute top-1/2 transform -translate-y-1/2 -left-[70px] md:-left-[75px] lg:-left-[87.5px] z-10" width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_12_206)">
                         <circle cx="87.5" cy="83.5" r="54.5" fill="url(#paint0_linear_12_206)"/>
                         <circle cx="87.5" cy="83.5" r="50.5" stroke="#EDEDED" stroke-width="8"/>
@@ -93,16 +103,18 @@
                 <img class="h-full w-full object-cover" height="800" width="1200" src="./assets/images/header.webp" alt="Let’s travel the world">
             </div>
             <!-- TEXT & BOX BOTTOM -->
-            <section class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-                <h1 class="font-medium text-[100px] text-white text-center whitespace-nowrap">Let’s travel the world
-                </h1>
-                <p class="font-medium text-[26px] text-white text-center">Explore destinations, places, and
-                    unforgettable experiences</p>
-                <div class="flex items-center py-[20px] px-[25px] mt-44 bg-white rounded-[15px]">
-                    <div class="mr-16">
-                        <button type="button" class="flex items-center gap-x-2 text-[20px] text-[#1E1E1E] mb-1.5">
+            <div class="absolute bottom-0 md:bottom-10 left-0 md:left-1/2 transform md:-translate-x-1/2 z-20">
+                <section>
+                    <h1 class="font-medium text-[50px] md:text-[60px] lg:text-[72px] xl:text-[80px] 2xl:text-[100px] text-white text-center">Let’s travel the world
+                    </h1>
+                    <p class="max-w-10/12 mx-auto font-medium text-[20px] md:text-[22px] lg:text-[26px] text-white text-center">Explore destinations, places, and
+                        unforgettable experiences</p>
+                </section>
+                <div class="flex items-center py-[16px] md:py-[20px] px-[20px] md:px-[25px] mt-44 bg-white md:rounded-[15px]">
+                    <div class="mr-3 md:mr-8 lg:mr-10 xl:mr-16 -mt-4 md:-mt-0">
+                        <button type="button" class="flex items-center gap-x-1 md:gap-x-2 text-[14px] md:text-[16px] lg:text-[20px] text-[#1E1E1E] mb-1 md:mb-1.5">
                             <span>Location</span>
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            <svg class="w-[18px] h-[19px] md:w-[22px] md:h-[23px] lg:w-[24px] lg:h-[25px]" width="24" height="25" viewBox="0 0 24 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 10.5L12 15.5L17 10.5" stroke="url(#paint0_linear_7_16)" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
@@ -115,12 +127,12 @@
                                 </defs>
                             </svg>
                         </button>
-                        <p class="font-medium text-base text-[#8A8A8A]">Indonesia</p>
+                        <p class="font-medium text-xs md:text-base text-[#8A8A8A] lg:whitespace-nowrap">Indonesia</p>
                     </div>
-                    <div class="mr-16">
-                        <button type="button" class="flex items-center gap-x-2 text-[20px] text-[#1E1E1E] mb-1.5">
+                    <div class="mr-3 md:mr-8 lg:mr-10 xl:mr-16">
+                        <button type="button" class="flex items-center gap-x-1 md:gap-x-2 text-[14px] md:text-[16px] lg:text-[20px] text-[#1E1E1E] mb-1 md:mb-1.5">
                             <span>Date</span>
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            <svg class="w-[18px] h-[19px] md:w-[22px] md:h-[23px] lg:w-[24px] lg:h-[25px]" width="24" height="25" viewBox="0 0 24 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 10.5L12 15.5L17 10.5" stroke="url(#paint0_linear_7_16)" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
@@ -133,12 +145,12 @@
                                 </defs>
                             </svg>
                         </button>
-                        <p class="font-medium text-base text-[#8A8A8A]">14 June, Wed</p>
+                        <p class="font-medium text-xs md:text-base text-[#8A8A8A] lg:whitespace-nowrap">14 June, Wed</p>
                     </div>
-                    <div class="mr-6">
-                        <button type="button" class="flex items-center gap-x-2 text-[20px] text-[#1E1E1E] mb-1.5">
+                    <div class="mr-3 md:mr-6">
+                        <button type="button" class="flex items-center gap-x-1 md:gap-x-2 text-[14px] md:text-[16px] lg:text-[20px] text-[#1E1E1E] mb-1 md:mb-1.5">
                             <span>Price</span>
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            <svg class="w-[18px] h-[19px] md:w-[22px] md:h-[23px] lg:w-[24px] lg:h-[25px]" width="24" height="25" viewBox="0 0 24 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 10.5L12 15.5L17 10.5" stroke="url(#paint0_linear_7_16)" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
@@ -151,11 +163,11 @@
                                 </defs>
                             </svg>
                         </button>
-                        <p class="font-medium text-base text-[#8A8A8A]">$500-2000</p>
+                        <p class="font-medium text-xs md:text-base text-[#8A8A8A] lg:whitespace-nowrap">$500-2000</p>
                     </div>
-                    <div class="relative w-[365px] h-[55px] bg-[#E5F0F5] ml-auto flex items-center rounded-[10px] pr-2">
+                    <div class="relative w-[250px] md:w-[280px] lg:w-[300px] xl:w-[365px] h-[55px] bg-[#E5F0F5] ml-auto flex items-center rounded-[10px] pr-2">
                         <input
-                            class="w-full h-full pl-5 pr-[50px] focus:outline-none text-[#1E1E1E] bg-transparent :placeholder-[#8A8A8A] text-base"
+                            class="w-full h-full pl-5 pr-[50px] focus:outline-none text-[#1E1E1E] bg-transparent :placeholder-[#8A8A8A] text-sm md:text-base"
                             type="text" name="search" id="search" placeholder="Search destinations...">
                         <button type="button" aria-label="Search Destination">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -175,7 +187,7 @@
                         </button>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     </header>
     <!-- SPONSOR -->
