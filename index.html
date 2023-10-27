@@ -15,9 +15,9 @@
     <!-- NAV -->
     <nav class="w-full fixed z-50">
         <div class="container-travelers px-5 md:px-5 lg:px-0">
-            <div class="flex items-center gap-x-[80px] py-[14px]">
+            <div class="flex items-center md:gap-x-[48px] lg:gap-x-[70px] xl:gap-x-[80px] py-[14px]">
                 <!-- HAMBURGER BUTTON SHOW IN MOBILE -->
-                <div class="w-3/12 block md:hidden">
+                <div class="w-4/12 block md:hidden">
                     <button type="button" class="text-[#1E1E1E]">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -25,7 +25,7 @@
                     </button>
                 </div>
                 <!-- NAV LOGO -->
-                <div class="w-5/12 md:w-auto">
+                <div class="w-4/12 md:w-auto">
                     <a href="/" class="font-heavitas text-base text-[#EDEDED]">TRAVELERS</a>
                 </div>
                 <div class="hidden md:flex md:w-auto md:gap-x-[22px] lg:gap-x-[28px] xl:gap-x-[35px]">
@@ -37,17 +37,19 @@
                     <a href="/" class="font-medium text-base text-[#EDEDED]">Services</a>
                 </div>
                 <!-- BOOK A TRAVEL -->
-                <div class="w-3/12 md:w-auto ml-auto">
+                <div class="w-4/12 md:w-auto flex justify-end ml-auto">
                     <!-- BUTTON BOOK TRAVEL -->
                     <a href="/"
-                        class="inline-block py-[8px] px-[10px] md:py-[10px] md:px-[12px] lg:py-[13px] lg:px-[13px] font-bold text-sm md:text-base text-[#EDEDED] rounded-[10px] whitespace-nowrap" style="background: linear-gradient(180deg, #0077ED -112.22%, #7BF9D3 196.67%);">Book a travel</a>
+                        class="inline-block py-[8px] px-[10px] md:py-[10px] md:px-[12px] lg:py-[13px] lg:px-[13px] font-bold text-sm md:text-base text-[#EDEDED] rounded-[10px] whitespace-nowrap" style="background: linear-gradient(180deg, #0077ED -112.22%, #7BF9D3 196.67%);">Book <span class="hidden md:inline-block">a travel</span>
+                        <span class="inline-block md:hidden">Now</span>                                             
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
     <!-- HEADER -->
     <header>
-        <div class="h-screen max-h-[900px] w-full flex flex-nowrap relative overflow-hidden">
+        <div class="h-screen w-full flex flex-nowrap relative overflow-hidden">
             <!-- HEADER LEFT -->
             <div class="h-full w-1/12">
                 <img class="h-full w-full object-cover" height="800" width="200" src="./assets/images/header-left.webp" alt="Ornament">
@@ -55,7 +57,7 @@
             <!-- HEADER RIGHT: MAIN IMAGE -->
             <div class="h-full w-11/12 relative">
                 <!-- TEXT & 1M IMAGE -->
-                <div class="absolute top-1/2 transform -translate-y-1/2 left-0 z-10">
+                <div class="absolute top-[80%] md:top-1/2 transform -translate-y-1/2 left-0 z-10">
                     <!-- TEXT -->
                     <svg class="w-[120px] md:w-[140px] lg:w-[157px]" width="157" height="437" viewBox="0 0 157 437" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.53325 39.1116L11.0445 40.4418C10.6213 41.5328 11.3348 42.7727 12.7156 43.5041C14.1049 44.2401 15.4062 44.0785 15.8907 43.1637C16.3204 42.3525 15.9627 41.5884 14.6394 40.4564L13.2045 39.2432C11.1696 37.5353 10.6562 35.7715 11.6208 33.9506C12.8367 31.6552 15.6261 31.1877 18.4048 32.6597C21.3044 34.1957 22.3344 36.6531 21.1844 38.9283L18.7423 37.6346C19.2137 36.5361 18.6286 35.4084 17.3255 34.7181C16.0397 34.037 14.8521 34.1926 14.363 35.1159C13.9562 35.884 14.3317 36.6355 15.5905 37.7222L16.9315 38.8415C19.1421 40.6976 19.6626 42.3437 18.6569 44.2422C17.3769 46.6585 14.6089 47.1483 11.5195 45.5117C8.52498 43.9255 7.37209 41.4914 8.53325 39.1116Z" fill="white"/>
@@ -103,15 +105,15 @@
                 <img class="h-full w-full object-cover" height="800" width="1200" src="./assets/images/header.webp" alt="Let’s travel the world">
             </div>
             <!-- TEXT & BOX BOTTOM -->
-            <div class="absolute bottom-0 md:bottom-10 left-0 md:left-1/2 transform md:-translate-x-1/2 z-20">
+            <div class="max-w-full absolute bottom-0 md:bottom-10 left-0 md:left-1/2 transform md:-translate-x-1/2 z-20">
                 <section>
-                    <h1 class="font-medium text-[50px] md:text-[60px] lg:text-[72px] xl:text-[80px] 2xl:text-[100px] text-white text-center">Let’s travel the world
+                    <h1 class="font-medium text-[60px] md:text-[60px] lg:text-[72px] xl:text-[80px] 2xl:text-[100px] text-white text-center">Let’s travel<br class="block md:hidden" /> the world
                     </h1>
                     <p class="max-w-10/12 mx-auto font-medium text-[20px] md:text-[22px] lg:text-[26px] text-white text-center">Explore destinations, places, and
                         unforgettable experiences</p>
                 </section>
-                <div class="flex items-center py-[16px] md:py-[20px] px-[20px] md:px-[25px] mt-44 bg-white md:rounded-[15px]">
-                    <div class="mr-3 md:mr-8 lg:mr-10 xl:mr-16 -mt-4 md:-mt-0">
+                <div class="flex items-center py-[16px] md:py-[20px] px-[20px] md:px-[25px] mt-52 md:mt-32 lg:mt-44 bg-white md:rounded-[15px]">
+                    <div class="mr-4 md:mr-8 lg:mr-10 xl:mr-16">
                         <button type="button" class="flex items-center gap-x-1 md:gap-x-2 text-[14px] md:text-[16px] lg:text-[20px] text-[#1E1E1E] mb-1 md:mb-1.5">
                             <span>Location</span>
                             <svg class="w-[18px] h-[19px] md:w-[22px] md:h-[23px] lg:w-[24px] lg:h-[25px]" width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -129,7 +131,7 @@
                         </button>
                         <p class="font-medium text-xs md:text-base text-[#8A8A8A] lg:whitespace-nowrap">Indonesia</p>
                     </div>
-                    <div class="mr-3 md:mr-8 lg:mr-10 xl:mr-16">
+                    <div class="mr-4 md:mr-8 lg:mr-10 xl:mr-16">
                         <button type="button" class="flex items-center gap-x-1 md:gap-x-2 text-[14px] md:text-[16px] lg:text-[20px] text-[#1E1E1E] mb-1 md:mb-1.5">
                             <span>Date</span>
                             <svg class="w-[18px] h-[19px] md:w-[22px] md:h-[23px] lg:w-[24px] lg:h-[25px]" width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -147,7 +149,7 @@
                         </button>
                         <p class="font-medium text-xs md:text-base text-[#8A8A8A] lg:whitespace-nowrap">14 June, Wed</p>
                     </div>
-                    <div class="mr-3 md:mr-6">
+                    <div class="mr-4 md:mr-6">
                         <button type="button" class="flex items-center gap-x-1 md:gap-x-2 text-[14px] md:text-[16px] lg:text-[20px] text-[#1E1E1E] mb-1 md:mb-1.5">
                             <span>Price</span>
                             <svg class="w-[18px] h-[19px] md:w-[22px] md:h-[23px] lg:w-[24px] lg:h-[25px]" width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -165,12 +167,12 @@
                         </button>
                         <p class="font-medium text-xs md:text-base text-[#8A8A8A] lg:whitespace-nowrap">$500-2000</p>
                     </div>
-                    <div class="relative w-[250px] md:w-[280px] lg:w-[300px] xl:w-[365px] h-[55px] bg-[#E5F0F5] ml-auto flex items-center rounded-[10px] pr-2">
+                    <div class="relative w-auto md:w-[280px] lg:w-[300px] xl:w-[365px] h-[55px] bg-[#E5F0F5] ml-auto flex items-center rounded-[10px] pl-2 md:pl-0 pr-2">
                         <input
-                            class="w-full h-full pl-5 pr-[50px] focus:outline-none text-[#1E1E1E] bg-transparent :placeholder-[#8A8A8A] text-sm md:text-base"
+                            class="w-full h-full hidden md:block pl-5 md:pr-[36px] lg:pr-[50px] focus:outline-none text-[#1E1E1E] bg-transparent :placeholder-[#8A8A8A] text-sm md:text-base"
                             type="text" name="search" id="search" placeholder="Search destinations...">
                         <button type="button" aria-label="Search Destination">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                            <svg class="h-[40px] w-[40px]" width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect width="40" height="40" rx="10" fill="url(#paint0_linear_7_8)" />
                                 <path
@@ -518,7 +520,7 @@
                     <div class="w-full flex items-center justify-between absolute bottom-5">
                         <div>
                             <div
-                                class="w-[182px] flex items-center gap-x-2.5 py-[5px] pl-[7px] pr-[19px] bg-[#E5F0F5] rounded-[10px] mb-[13px]">
+                                class="w-[140px] md:w-[182px] flex items-center gap-x-2 md:gap-x-2 lg:gap-x-2.5 py-[5px] pl-[7px] pr-[19px] bg-[#E5F0F5] rounded-[10px] mb-[13px]">
                                 <svg class="h-[32px] md:h-[32px] lg:h-[36px] xl:h-[40px] w-[32px] md:w-[32px] lg:w-[36px] xl:w-[40px]" width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="40" height="40" rx="10" fill="#1E1E1E" />
@@ -526,10 +528,10 @@
                                         d="M11.414 21.7779L10 23.1919L14.949 25.3129L17.071 30.2629L18.485 28.8489L17.778 25.3129L21.091 21.9999L24.701 29.7039L26.04 28.3649L24.85 18.2419L27.678 15.4129C27.869 15.2284 28.0214 15.0078 28.1262 14.7638C28.231 14.5197 28.2862 14.2573 28.2885 13.9917C28.2908 13.7262 28.2402 13.4628 28.1396 13.217C28.0391 12.9712 27.8906 12.7479 27.7028 12.5602C27.515 12.3724 27.2917 12.2239 27.0459 12.1233C26.8001 12.0227 26.5368 11.9721 26.2712 11.9744C26.0056 11.9767 25.7432 12.0319 25.4992 12.1367C25.2552 12.2416 25.0345 12.3939 24.85 12.5849L21.947 15.4879L11.824 14.2969L10.559 15.5629L18.203 19.2329L14.95 22.4859L11.414 21.7779Z"
                                         fill="#EDEDED" />
                                 </svg>
-                                <span class="font-medium text-[20px] text-[#1E1E1E]">Destinations</span>
+                                <span class="font-medium text-[13px] md:text-[16px] lg:text-[20px] text-[#1E1E1E]">Destinations</span>
                             </div>
                             <div
-                                class="w-[182px] flex items-center gap-x-2.5 py-[5px] pl-[7px] pr-[19px] bg-[#E5F0F5] rounded-[10px]">
+                                class="w-[140px] md:w-[182px] flex items-center gap-x-2 md:gap-x-2 lg:gap-x-2.5 py-[5px] pl-[7px] pr-[19px] bg-[#E5F0F5] rounded-[10px]">
                                 <svg class="h-[32px] md:h-[32px] lg:h-[36px] xl:h-[40px] w-[32px] md:w-[32px] lg:w-[36px] xl:w-[40px]" width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="40" height="40" rx="10" fill="#1E1E1E" />
@@ -537,13 +539,13 @@
                                         d="M15.75 12C15.75 11.8011 15.671 11.6103 15.5303 11.4697C15.3897 11.329 15.1989 11.25 15 11.25C14.8011 11.25 14.6103 11.329 14.4697 11.4697C14.329 11.6103 14.25 11.8011 14.25 12V13.816C13.5205 13.9195 12.8448 14.2588 12.3262 14.7823C11.8077 15.3057 11.4746 15.9845 11.378 16.715L11.291 17.368C11.276 17.478 11.262 17.589 11.249 17.7C11.2409 17.7693 11.2477 17.8395 11.2687 17.906C11.2898 17.9725 11.3248 18.0337 11.3713 18.0857C11.4178 18.1377 11.4748 18.1792 11.5385 18.2075C11.6022 18.2358 11.6713 18.2503 11.741 18.25H28.26C28.3298 18.2503 28.3988 18.2358 28.4625 18.2075C28.5263 18.1792 28.5833 18.1377 28.6298 18.0857C28.6763 18.0337 28.7112 17.9725 28.7323 17.906C28.7533 17.8395 28.7601 17.7693 28.752 17.7C28.738 17.59 28.725 17.478 28.71 17.368L28.623 16.715C28.5264 15.9845 28.1934 15.3057 27.6748 14.7823C27.1562 14.2588 26.4806 13.9195 25.751 13.816V12C25.751 11.8011 25.672 11.6103 25.5313 11.4697C25.3907 11.329 25.1999 11.25 25.001 11.25C24.8021 11.25 24.6113 11.329 24.4707 11.4697C24.33 11.6103 24.251 11.8011 24.251 12V13.668C21.4233 13.4162 18.5787 13.4162 15.751 13.668L15.75 12ZM28.945 20.226C28.9403 20.0978 28.886 19.9764 28.7934 19.8876C28.7008 19.7987 28.5773 19.7494 28.449 19.75H11.551C11.4227 19.7494 11.2992 19.7987 11.2066 19.8876C11.1141 19.9764 11.0597 20.0978 11.055 20.226C10.9954 22.0357 11.1059 23.847 11.385 25.636C11.4877 26.2951 11.8065 26.9015 12.2912 27.3598C12.7759 27.8181 13.3992 28.1024 14.063 28.168L15.256 28.286C18.411 28.596 21.589 28.596 24.744 28.286L25.937 28.168C26.6009 28.1024 27.2241 27.8181 27.7088 27.3598C28.1936 26.9015 28.5123 26.2951 28.615 25.636C28.8937 23.8469 29.0042 22.0357 28.945 20.226Z"
                                         fill="#EDEDED" />
                                 </svg>
-                                <span class="font-medium text-[20px] text-[#1E1E1E]">Date</span>
+                                <span class="font-medium text-[13px] md:text-[16px] lg:text-[20px] text-[#1E1E1E]">Date</span>
                             </div>
                         </div>
                         <div>
                             <div
-                                class="w-[182px] flex items-center gap-x-2.5 py-[5px] pl-[7px] pr-[19px] bg-[#E5F0F5] rounded-[10px] mb-[13px]">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                class="w-[140px] md:w-[182px] flex items-center gap-x-2 md:gap-x-2 lg:gap-x-2.5 py-[5px] pl-[7px] pr-[19px] bg-[#E5F0F5] rounded-[10px] mb-[13px]">
+                                <svg class="h-[32px] md:h-[32px] lg:h-[36px] xl:h-[40px] w-[32px] md:w-[32px] lg:w-[36px] xl:w-[40px]" width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="40" height="40" rx="10" fill="#1E1E1E" />
                                     <g clip-path="url(#clip0_16_859)">
@@ -557,18 +559,18 @@
                                         </clipPath>
                                     </defs>
                                 </svg>
-                                <span class="font-medium text-[20px] text-[#1E1E1E]">Location</span>
+                                <span class="font-medium text-[13px] md:text-[16px] lg:text-[20px] text-[#1E1E1E]">Location</span>
                             </div>
                             <div
-                                class="w-[182px] flex items-center gap-x-2.5 py-[5px] pl-[7px] pr-[19px] bg-[#E5F0F5] rounded-[10px]">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                class="w-[140px] md:w-[182px] flex items-center gap-x-2 md:gap-x-2 lg:gap-x-2.5 py-[5px] pl-[7px] pr-[19px] bg-[#E5F0F5] rounded-[10px]">
+                                <svg class="h-[32px] md:h-[32px] lg:h-[36px] xl:h-[40px] w-[32px] md:w-[32px] lg:w-[36px] xl:w-[40px]" width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="40" height="40" rx="10" fill="#1E1E1E" />
                                     <path
                                         d="M19.25 30.5V28.7928C15.5248 28.5781 13.2617 26.6591 13.25 23.75H16.625C16.708 24.9847 17.7434 25.9273 19.25 26.0938V21.5L17.9952 21.1719C15.1358 20.5072 13.6058 18.8567 13.6058 16.3869C13.6058 13.4755 15.6913 11.5663 19.25 11.2812V9.5H20.75V11.2812C24.3777 11.5766 26.3281 13.5191 26.375 16.25H23C22.9644 15.1222 22.258 14.2161 20.75 14.0938V18.4062L22.1947 18.7475C25.2317 19.4122 26.75 20.9844 26.75 23.5625C26.75 26.5784 24.6997 28.5256 20.75 28.7806V30.5H19.25ZM19.25 18.125V14.0938C17.9567 14.165 17.0342 14.9595 17.0342 16.0873C17.0342 17.1327 17.8025 17.8161 19.25 18.125ZM20.75 21.7812V26.0938C22.5383 26.0216 23.3928 25.2069 23.3928 23.9483C23.3928 22.7961 22.5383 22.0203 20.75 21.7812Z"
                                         fill="#EDEDED" />
                                 </svg>
-                                <span class="font-medium text-[20px] text-[#1E1E1E]">Prices</span>
+                                <span class="font-medium text-[13px] md:text-[16px] lg:text-[20px] text-[#1E1E1E]">Prices</span>
                             </div>
                         </div>
                     </div>
