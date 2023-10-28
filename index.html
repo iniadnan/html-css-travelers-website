@@ -9,12 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let’s travel the world</title>
     <link rel="stylesheet" href="./styles/css/tailwind.css">
+    <style>
+        .nav-anchor {
+            color: #EDEDED;
+            transition: 0.15s ease-in;
+        }
+    </style>
 </head>
 
 <body>
     <!-- NAV -->
-    <nav class="w-full fixed z-50">
-        <div class="container-travelers px-5 md:px-5 lg:px-0">
+    <nav id="nav" class="w-full fixed z-50">
+        <div class="container-travelers px-5 md:px-5 lg:px-0 z-20 relative">
             <div class="flex items-center md:gap-x-[48px] lg:gap-x-[70px] xl:gap-x-[80px] py-[14px]">
                 <!-- HAMBURGER BUTTON SHOW IN MOBILE -->
                 <div class="w-4/12 block md:hidden">
@@ -26,15 +32,15 @@
                 </div>
                 <!-- NAV LOGO -->
                 <div class="w-4/12 md:w-auto">
-                    <a href="/" class="font-heavitas text-base text-[#EDEDED]">TRAVELERS</a>
+                    <a href="/" class="nav-anchor font-heavitas text-base">TRAVELERS</a>
                 </div>
                 <div class="hidden md:flex md:w-auto md:gap-x-[22px] lg:gap-x-[28px] xl:gap-x-[35px]">
-                    <a href="/" class="font-medium text-base text-[#EDEDED]">Home</a>
-                    <a href="/" class="font-medium text-base text-[#EDEDED]">About Us</a>
-                    <a href="/" class="font-medium text-base text-[#EDEDED]">Destinations</a>
-                    <a href="/" class="font-medium text-base text-[#EDEDED]">Travel Deals</a>
-                    <a href="/" class="font-medium text-base text-[#EDEDED]">Blog</a>
-                    <a href="/" class="font-medium text-base text-[#EDEDED]">Services</a>
+                    <a href="/" class="nav-anchor font-medium text-base">Home</a>
+                    <a href="/" class="nav-anchor font-medium text-base">About Us</a>
+                    <a href="/" class="nav-anchor font-medium text-base">Destinations</a>
+                    <a href="/" class="nav-anchor font-medium text-base">Travel Deals</a>
+                    <a href="/" class="nav-anchor font-medium text-base">Blog</a>
+                    <a href="/" class="nav-anchor font-medium text-base">Services</a>
                 </div>
                 <!-- BOOK A TRAVEL -->
                 <div class="w-4/12 md:w-auto flex justify-end ml-auto">
@@ -46,6 +52,8 @@
                 </div>
             </div>
         </div>
+        <!-- SLIDE WHEN SCROLL -->
+        <div class="absolute w-full h-full bg-white top-0 transform -translate-y-full transition duration-500"></div>
     </nav>
     <!-- HEADER -->
     <header>
@@ -801,6 +809,7 @@
             </div>
         </div>
     </footer>
+    <script src="./styles/js/index.js"></script>
 </body>
 
 </html>
