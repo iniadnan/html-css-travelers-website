@@ -14,10 +14,24 @@
             color: #EDEDED;
             transition: 0.15s ease-in;
         }
+        .header-left {
+            width: 0%;
+        }
+        .header-right {
+            width: 100%;
+        }
+        .header-left, .header-right {
+            transition: 0.5s linear;
+            transition-delay: 0.5s;
+        }
+        .header__main-text, .header__secondary-text {
+            transition: 0.75s linear;
+            transition-delay: 1.25s;
+        }
     </style>
 </head>
 
-<body>
+<body onload="onLoadPage()">
     <!-- NAV -->
     <nav id="nav" class="w-full fixed z-50">
         <div class="container-travelers px-5 md:px-5 lg:px-0 z-20 relative">
@@ -56,14 +70,14 @@
         <div class="absolute w-full h-full bg-white top-0 transform -translate-y-full transition duration-500"></div>
     </nav>
     <!-- HEADER -->
-    <header>
+    <header id="header">
         <div class="h-screen w-full flex flex-nowrap relative overflow-hidden">
             <!-- HEADER LEFT -->
-            <div class="h-full w-1/12">
+            <div class="header-left h-full">
                 <img class="h-full w-full object-cover" height="800" width="200" src="./assets/images/header-left.webp" alt="Ornament">
             </div>
             <!-- HEADER RIGHT: MAIN IMAGE -->
-            <div class="h-full w-11/12 relative">
+            <div class="header-right h-full relative">
                 <!-- TEXT & 1M IMAGE -->
                 <div class="absolute top-[80%] md:top-1/2 transform -translate-y-1/2 left-0 z-10">
                     <!-- TEXT -->
@@ -114,10 +128,14 @@
             </div>
             <!-- TEXT -->
             <section class="absolute top-[35%] md:top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-                <h1 class="font-medium text-[60px] md:text-[72px] lg:text-[80px] xl:text-[100px] text-white text-center whitespace-nowrap leading-none md:leading-normal mb-5 md:mb-0">Let’s travel<br class="block md:hidden" /> the world
-                </h1>
-                <p class="max-w-10/12 mx-auto font-medium text-[20px] md:text-[22px] lg:text-[26px] text-white text-center">Explore destinations, places, and
-                    unforgettable experiences</p>
+                <div class="h-[150px] overflow-hidden">
+                    <h1 class="header__main-text transform translate-y-[150px] font-medium text-[60px] md:text-[72px] lg:text-[80px] xl:text-[100px] text-white text-center whitespace-nowrap leading-none md:leading-normal mb-5 md:mb-0">Let’s travel<br class="block md:hidden" /> the world
+                    </h1>
+                </div>
+                <div class="h-[40px] overflow-hidden">
+                    <p class="header__secondary-text transform translate-y-[40px] max-w-10/12 mx-auto font-medium text-[20px] md:text-[22px] lg:text-[26px] text-white text-center">Explore destinations, places, and
+                        unforgettable experiences</p>
+                </div>
             </section>
             <!-- BOX BOTTOM -->
             <div class="max-w-full md:w-auto w-full absolute bottom-0 md:bottom-10 left-0 md:left-1/2 transform md:-translate-x-1/2 z-20 max-w-full absolute bottom-0 md:bottom-10 left-0 md:left-1/2 transform md:-translate-x-1/2 z-20">
