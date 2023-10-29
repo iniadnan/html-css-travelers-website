@@ -528,6 +528,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 1.5rem;
 }
 
+.-left-\[8px\] {
+  left: -8px;
+}
+
+.-left-\[18px\] {
+  left: -18px;
+}
+
+.-left-\[28px\] {
+  left: -28px;
+}
+
+.-left-\[38px\] {
+  left: -38px;
+}
+
 .bottom-5 {
   bottom: 1.25rem;
 }
@@ -554,6 +570,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .z-10 {
   z-index: 10;
+}
+
+.z-\[1\] {
+  z-index: 1;
+}
+
+.z-\[2\] {
+  z-index: 2;
+}
+
+.z-\[3\] {
+  z-index: 3;
+}
+
+.z-\[4\] {
+  z-index: 4;
+}
+
+.z-\[5\] {
+  z-index: 5;
 }
 
 .order-2 {
@@ -722,12 +758,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 380px;
 }
 
+.h-\[30px\] {
+  height: 30px;
+}
+
 .h-\[50px\] {
   height: 50px;
 }
 
-.h-\[30px\] {
-  height: 30px;
+.h-\[47px\] {
+  height: 47px;
 }
 
 .w-full {
@@ -836,6 +876,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .translate-y-\[40px\] {
   --tw-translate-y: 40px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[50px\] {
+  --tw-translate-y: 50px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[100px\] {
+  --tw-translate-y: 100px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -987,6 +1037,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .bg-cover {

@@ -1,14 +1,16 @@
 const NavDOM = document.querySelector("#nav");
 const HeaderDOM = document.querySelector("#header");
+const EscapeParadiseDOM = document.querySelector("#escape-paradise");
 const NotificationDOM = document.querySelector("#notification");
 
+let EscapeParadiseDOMPosition = EscapeParadiseDOM.getBoundingClientRect().top;
 let NotificationDOMPosition = NotificationDOM.getBoundingClientRect().top;
 
 function onLoadPage() {
   onLoadHeader();
 }
 
-// FUNCTION FOR HANDLE SECTION HEADER ANIMATION
+// FUNCTION HEADER SECTION
 function onLoadHeader() {
   // WIDTH HEADER LEFT - HEADER RIGHT
   HeaderDOM.querySelector(".header-left").style.width = "8%";
@@ -19,7 +21,19 @@ function onLoadHeader() {
     "translateY(0px)";
 }
 
-// FUNCTION FOR HANDLE SECTION NOTIFICATION
+// FUNCTION ESCAPE PARADISE SECTION
+function onLoadEscapeParadise() {
+  // TEXT ANIMATION
+  EscapeParadiseDOM.querySelectorAll(".escape-paradise__main-text").forEach((el) =>
+    el.classList.add("escape-paradise__main-text-animation")
+  );
+  // PHOTO SLIDE RIGHT ANIMATION
+  EscapeParadiseDOM.querySelectorAll(".escape-paradise__image-slide").forEach((el) =>
+    el.style.left = "0px"
+  );
+}
+
+// FUNCTION NOTIFICATION SECTION
 function onLoadNotification() {
   NotificationDOM.querySelector(".notification__main-text").style.transform =
     "translateY(0px)";
@@ -48,7 +62,13 @@ document.addEventListener("scroll", function () {
     });
   }
 
-  if (window.scrollY > NotificationDOMPosition - 450) {
+  // WHEN WINDOW IN AREA ESCAPE PARADISE
+  if (window.scrollY > EscapeParadiseDOMPosition - 450) {
+    onLoadEscapeParadise();
+  }
+
+  // WHEN WINDOW IN AREA NOTIFICATION
+  if (window.scrollY > NotificationDOMPosition - 650) {
     onLoadNotification();
   }
 });
