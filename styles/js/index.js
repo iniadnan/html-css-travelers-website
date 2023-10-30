@@ -24,12 +24,12 @@ function onLoadHeader() {
 // FUNCTION ESCAPE PARADISE SECTION
 function onLoadEscapeParadise() {
   // TEXT ANIMATION
-  EscapeParadiseDOM.querySelectorAll(".escape-paradise__main-text").forEach((el) =>
-    el.classList.add("escape-paradise__main-text-animation")
+  EscapeParadiseDOM.querySelectorAll(".escape-paradise__main-text").forEach(
+    (el) => el.classList.add("escape-paradise__main-text-animation")
   );
   // PHOTO SLIDE RIGHT ANIMATION
-  EscapeParadiseDOM.querySelectorAll(".escape-paradise__image-slide").forEach((el) =>
-    el.style.left = "0px"
+  EscapeParadiseDOM.querySelectorAll(".escape-paradise__image-slide").forEach(
+    (el) => (el.style.left = "0px")
   );
 }
 
@@ -71,4 +71,31 @@ document.addEventListener("scroll", function () {
   if (window.scrollY > NotificationDOMPosition - 650) {
     onLoadNotification();
   }
+});
+
+const popularDestinationsSwiper = new Swiper(".popular-destination-swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 18,
+  navigation: {
+    nextEl: ".popular-destination-swiper-button-next",
+    prevEl: ".popular-destination-swiper-button-prev",
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: "auto",
+      spaceBetween: 12,
+    },
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+    1040: {
+      slidesPerView: 3,
+      spaceBetween: 12,
+    },
+    1240: {
+      slidesPerView: 3,
+      spaceBetween: 18,
+    },
+  },
 });
