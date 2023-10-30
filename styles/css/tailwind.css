@@ -690,6 +690,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }
 
+.mt-\[34px\] {
+  margin-top: 34px;
+}
+
 .block {
   display: block;
 }
@@ -792,6 +796,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[34px\] {
   height: 34px;
+}
+
+.h-\[100px\] {
+  height: 100px;
 }
 
 .w-full {
@@ -928,6 +936,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .translate-y-\[68px\] {
   --tw-translate-y: 68px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[80px\] {
+  --tw-translate-y: 80px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[105px\] {
+  --tw-translate-y: 105px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1278,6 +1296,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 35px;
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1543,6 +1565,10 @@ body {
     height: 40px;
   }
 
+  .md\:h-\[55px\] {
+    height: 55px;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -1627,6 +1653,11 @@ body {
 
   .md\:translate-y-\[40px\] {
     --tw-translate-y: 40px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:translate-y-\[60px\] {
+    --tw-translate-y: 60px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1786,6 +1817,10 @@ body {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-\[36px\] {
+    font-size: 36px;
   }
 
   .md\:leading-normal {

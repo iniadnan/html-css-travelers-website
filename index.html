@@ -68,7 +68,7 @@
 
         .notification__main-text,
         .notification__secondary-text {
-            transition: 1s linear;
+            transition: 0.75s linear;
             transition-delay: 0.25s;
         }
     </style>
@@ -1138,20 +1138,20 @@
                 style="background-image: url('./assets/images/notifications.webp');">
                 <div class="text-center">
                     <!-- TEXT IN HERE -->
-                    <div class="h-[55px] overflow-hidden">
+                    <div class="h-[100px] md:h-[55px] overflow-hidden">
                         <h2
-                            class="notification__main-text transform translate-y-[150px] font-medium text-[35px] md:text-[37px] lg:text-[40px] text-white leading-[40px] md:leading-[48px] lg:leading-[52px] mb-[14px] md:mb-[18px]">
+                            class="notification__main-text transform translate-y-[105px] md:translate-y-[60px] font-medium text-[32px] md:text-[36px] lg:text-[40px] text-white leading-[40px] md:leading-[48px] lg:leading-[52px] mb-[14px] md:mb-[18px]">
                             Get up to date<br class="block md:hidden" /> notifications
                             from us</h2>
                     </div>
                     <div class="h-[30px] overflow-hidden">
                         <p
-                            class="notification__secondary-text transform translate-y-[150px] font-medium text-white text-[16px] md:text-[18px]">
+                            class="notification__secondary-text transform translate-y-[80px] font-medium text-white text-[18px]">
                             Subscribe now for free!</p>
                     </div>
                     <!-- FORM -->
                     <form method="POST"
-                        class="h-[50px] w-[276px] max-w-full relative mt-[40px] md:mt-[48px] lg:mt-[55px] mx-auto">
+                        class="h-[50px] w-[276px] max-w-full relative mt-[34px] md:mt-[48px] lg:mt-[55px] mx-auto">
                         <input
                             class="h-full w-full rounded-[10px] bg-white text-base :placeholde-[#8A8A8A] text-[#1E1E1E] focus:outline-none pl-4 pr-[50px]"
                             type="text" name="email" id="email" placeholder="Your email address">
