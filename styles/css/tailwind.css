@@ -560,6 +560,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.right-1 {
+  right: 0.25rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -782,6 +790,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 68px;
 }
 
+.h-\[34px\] {
+  height: 34px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -852,6 +864,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[50px\] {
   width: 50px;
+}
+
+.w-\[34px\] {
+  width: 34px;
 }
 
 .max-w-full {
@@ -1075,6 +1091,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-\[13px\] {
   padding: 13px;
+}
+
+.p-\[8px\] {
+  padding: 8px;
+}
+
+.p-\[10px\] {
+  padding: 10px;
 }
 
 .px-5 {
@@ -1406,6 +1430,10 @@ body {
     left: 50%;
   }
 
+  .md\:right-4 {
+    right: 1rem;
+  }
+
   .md\:order-1 {
     order: 1;
   }
@@ -1563,6 +1591,10 @@ body {
     width: 80px;
   }
 
+  .md\:w-\[40px\] {
+    width: 40px;
+  }
+
   .md\:max-w-\[529px\] {
     max-width: 529px;
   }
@@ -1639,6 +1671,10 @@ body {
 
   .md\:rounded-\[15px\] {
     border-radius: 15px;
+  }
+
+  .md\:p-\[11px\] {
+    padding: 11px;
   }
 
   .md\:px-5 {
@@ -1770,6 +1806,10 @@ body {
     left: -87.5px;
   }
 
+  .lg\:right-6 {
+    right: 1.5rem;
+  }
+
   .lg\:mr-10 {
     margin-right: 2.5rem;
   }
@@ -1810,6 +1850,10 @@ body {
     height: 450px;
   }
 
+  .lg\:h-\[42px\] {
+    height: 42px;
+  }
+
   .lg\:w-\[157px\] {
     width: 157px;
   }
@@ -1832,6 +1876,10 @@ body {
 
   .lg\:w-\[100px\] {
     width: 100px;
+  }
+
+  .lg\:w-\[42px\] {
+    width: 42px;
   }
 
   .lg\:flex-nowrap {
@@ -1870,6 +1918,10 @@ body {
 
   .lg\:whitespace-nowrap {
     white-space: nowrap;
+  }
+
+  .lg\:p-\[13px\] {
+    padding: 13px;
   }
 
   .lg\:px-0 {
